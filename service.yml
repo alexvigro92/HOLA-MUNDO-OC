@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: hola-mundo
+  namespace: bootcamp
+  labels:
+    app: hola-mundo
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: hola-mundo
+  type: ClusterIP
+  sessionAffinity: None

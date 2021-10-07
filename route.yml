@@ -1,0 +1,15 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: hola-mundo
+  namespace: bootcamp
+  labels:
+    app: hola-mundo
+spec:
+  to:
+    kind: Service
+    name: hola-mundo
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
