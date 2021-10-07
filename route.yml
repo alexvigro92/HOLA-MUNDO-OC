@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: hola-mundo
-  namespace: bootcamp
+  namespace: <namespace>
   labels:
     app: hola-mundo
 spec:
