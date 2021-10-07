@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: hola-mundo
-  namespace: bootcamp
+  namespace: <namespace>
   labels:
     app: hola-mundo
 spec:
